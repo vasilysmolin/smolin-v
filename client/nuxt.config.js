@@ -3,7 +3,7 @@ const { join } = require('path')
 const { copySync, removeSync } = require('fs-extra')
 
 module.exports = {
-  mode: 'spa', // Comment this for SSR
+  // mode: 'spa', // Comment this for SSR
 
   srcDir: __dirname,
 
@@ -43,8 +43,11 @@ module.exports = {
     '~plugins/vform',
     '~plugins/axios',
     '~plugins/fontawesome',
-    '~plugins/nuxt-client-init', // Comment this for SSR
-    { src: '~plugins/bootstrap', mode: 'client' }
+    // '~plugins/nuxt-client-init', // Comment this for SSR
+    {
+        src: '~plugins/bootstrap',
+        mode: 'client'
+    }
   ],
 
   modules: [
