@@ -1,1 +1,0 @@
-import 'client/plugins/bootstrap'
